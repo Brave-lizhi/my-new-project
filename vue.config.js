@@ -5,5 +5,13 @@ module.exports = defineConfig({
     host: 'localhost',
     port: '5050',
     open: true
+  },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        "@": "src",
+        "assets": "@/assets"
+      }
+    }
   }
 })
